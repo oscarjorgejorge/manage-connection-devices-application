@@ -2,7 +2,7 @@
 
 Technical TEST.
 Technologies: HTML, CSS, Javascript, Angular.
-Try it out: https://oscarjorgejorge.github.io/manage-connection-devices-app/
+Try it out: https://oscarjorgejorge.github.io/manage-connection-devices-application/
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.7.0.
 
