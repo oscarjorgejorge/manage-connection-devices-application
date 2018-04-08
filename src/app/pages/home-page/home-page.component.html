@@ -1,0 +1,28 @@
+<div *ngIf="!showForm">
+  <button class="btn-add-device" (click)="displayForm()">Add Device</button>
+</div>
+<div *ngIf="showForm">
+   <app-form (add)="addNewDevice($event)" (hideFormClick)=hideForm($event)></app-form>
+</div>
+<div *ngIf="goodFeedbackEnabled">
+    <p class="submission-completed">Thank you, your device has been added</p>
+</div>
+    
+<div *ngIf="!deviceList[0]">
+    <p>There is no devices added!</p>  
+</div>
+
+<div *ngIf="deviceList[0]">
+    <h2>Devices</h2>
+        <div class="container-btn-sortBy">
+            <label>Order by</label>
+            <select name="sortBy" [(ngModel)]="sortBy">
+                <option disabled selected value> -- select an option -- </option>
+                <option value="Name">Name</option>
+              <option value="Installation date">Installation date</option>
+            </select>
+            <button (click)="sortTheArrayBy()">OK</button>
+        </div> 
+</div>
+
+<app-device-list [deviceList]="deviceList" (delete)="deleteDevice($event)"></app-device-list>

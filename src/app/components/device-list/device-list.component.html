@@ -1,0 +1,7 @@
+<div>
+  <div *ngIf="deviceList[0]">
+    <div *ngFor="let device of deviceList">
+        <app-device-card [device]="device" (delete)="handleDeleteDevice($event)"></app-device-card>
+    </div>
+  </div>
+</div>
