@@ -12,7 +12,7 @@ export class FormComponent implements OnInit {
   feedbackEnabled : boolean;
   processing : boolean;
   error = null;
-  newDevice : object;
+  newDevice : any;
 
   constructor() { }
 
