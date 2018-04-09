@@ -1,21 +1,21 @@
 <form (ngSubmit)="submitForm(form)" #form="ngForm" novalidate [ngClass]="{'is-processing': processing}">
   <div class="field" [ngClass]="{'has-error': feedbackEnabled && nameField.errors}">
     <label>Name</label>
-    <input type="text" name="name" [(ngModel)]="newDevice.name" #nameField="ngModel" required [disabled]="processing"/>
+    <input type="text" name="name" [(ngModel)]="newDevice.?name" #nameField="ngModel" required [disabled]="processing"/>
     <div *ngIf="feedbackEnabled && nameField.errors">
       <p *ngIf="nameField.errors.required" class="validation">Name required</p>
     </div>
   </div>
   <div class="field" [ngClass]="{'has-error': feedbackEnabled && typeField.errors}">
     <label>Type</label>
-    <input type="text" name="type" [(ngModel)]="newDevice.type" #typeField="ngModel" required [disabled]="processing"/>
+    <input type="text" name="type" [(ngModel)]="newDevice?.type" #typeField="ngModel" required [disabled]="processing"/>
     <div *ngIf="feedbackEnabled && typeField.errors">
       <p *ngIf="typeField.errors.required" class="validation">Type required</p>
     </div>
   </div>
   <div class="field" [ngClass]="{'has-error': feedbackEnabled && brandField.errors}">
     <label>Brand</label>
-    <select name="brand" [(ngModel)]="newDevice.brand" #brandField="ngModel" required>
+    <select name="brand" [(ngModel)]="newDevice.brand?" #brandField="ngModel" required>
       <option value="Linksys">Linksys</option>
       <option value="Cisco">Cisco</option>
       <option value="Surecom">Surecom</option>Cnet
