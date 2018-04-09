@@ -20,13 +20,13 @@ export class FormComponent implements OnInit {
   ngOnInit() {
     this.feedbackEnabled = false;
     this.processing = false;
-    this.newDevice = {
-      name: "",
-      type: "",
-      brand: "",
-      model: "",
-      date: Date,
-    }
+    // this.newDevice = {
+    //   name: "",
+    //   type: "",
+    //   brand: "",
+    //   model: "",
+    //   date: Date,
+    // }
   }
 
   // --- The function checks if the form has been correctly completed and sends the data to the parent page component. 
