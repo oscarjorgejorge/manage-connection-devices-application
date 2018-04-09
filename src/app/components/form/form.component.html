@@ -48,8 +48,8 @@
   </div>
 
   <div class="field submit">
-    <button type="submit" [disabled]="processing">Add</button>
-    <button (click)="handleHideForm()">Cancel</button>
+    <button class="btn-add-device" type="submit" [disabled]="processing">Add</button>
+    <button class="btn-delete" (click)="handleHideForm()">Cancel</button>
     <div *ngIf="feedbackEnabled && form.invalid">
       <p class="validation">There are errors in the form, please review the fields</p>
     </div>
