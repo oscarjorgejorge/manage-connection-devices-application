@@ -1,10 +1,9 @@
 export class Device {
-  _id? : String;
-  tripTitle?: string;
-  isAvailable?: boolean;
-  description?: string;
-  image?: string;
-  _creator?: String;
-  request?: Array<object>;
+  name : String;
+  type: string;
+  brand: boolean;
+  model: string;
+  date: Date;
+  identification: number;
 
 }

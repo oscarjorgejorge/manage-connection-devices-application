@@ -23,9 +23,9 @@ export class FormComponent implements OnInit {
     this.feedbackEnabled = false;
     this.processing = false;
 
-    if (!this.newDevice) {
-      this.newDevice = {};
-    }
+    // if (!this.newDevice) {
+    //   this.newDevice = {};
+    // }
   }
 
   // --- The function checks if the form has been correctly completed and sends the data to the parent page component. 
