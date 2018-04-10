@@ -1,8 +1,7 @@
 # ManageConnectionDevicesApp
 
-Technical TEST.
 Technologies: HTML, CSS, Javascript, Angular.
-Try it out: https://oscarjorgejorge.github.io/manage-connection-devices-application/
+Try it out: https://manage-connection-devices-app.herokuapp.com/
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.7.0.
 
