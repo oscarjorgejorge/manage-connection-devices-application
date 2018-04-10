@@ -1,4 +1,5 @@
-import { Component, OnInit, Output, EventEmitter} from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter} from '@angular/core';
+import { Device } from '../../class/device';
 
 @Component({
   selector: 'app-form',
@@ -9,9 +10,10 @@ export class FormComponent implements OnInit {
   @Output() add = new EventEmitter<object>();
   @Output() hideFormClick = new EventEmitter<boolean>();
 
+  @Input() newDevice: Device;
+
   feedbackEnabled : boolean;
   processing : boolean;
-  newDevice : any;
   error = null;
 
   constructor() { }
